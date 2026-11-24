@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Coworking location candidates for NJ Drain &amp; Plumbing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@600;700&display=swap">
+<style>:root {
+  --bg: #f5f5f2; --surface: #ffffff; --ink: #1b2326; --muted: #5c676c; --line: #dfe3e1;
+  --accent: #0b6e63; --accent-soft: rgba(11, 110, 99, .08);
+  --ok: #1d7a3e; --ok-bg: #e3f3e8; --ask: #8a5a00; --ask-bg: #fbf0d6; --no: #b3261e; --no-bg: #fbe3e1;
+  --font: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Barlow Semi Condensed", "Barlow", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121716; --surface: #1b2221; --ink: #e8eeec; --muted: #a3afab; --line: #2f3a38;
+    --accent: #5fc4b6; --accent-soft: rgba(95, 196, 182, .1);
+    --ok: #7fd39a; --ok-bg: rgba(127, 211, 154, .14); --ask: #f2c46b; --ask-bg: rgba(242, 196, 107, .14); --no: #f19a93; --no-bg: rgba(241, 154, 147, .14);
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.55 var(--font); }
+a { color: var(--accent); }
+.wrap { max-width: 880px; margin: 0 auto; padding: 40px 20px 64px; display: grid; gap: 32px; }
+header { display: grid; gap: 10px; }
+.eyebrow { font: 700 12px/1.3 var(--font-display); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+h1 { font: 700 clamp(30px, 5vw, 44px)/1.08 var(--font-display); margin: 0; letter-spacing: -.01em; }
+h2 { font: 700 24px/1.2 var(--font-display); margin: 0 0 10px; }
+h2 em, th em { font: 700 11px/1 var(--font-display); letter-spacing: .08em; text-transform: uppercase; font-style: normal; background: var(--accent); color: var(--surface); padding: 3px 7px; border-radius: 4px; vertical-align: middle; margin-left: 6px; }
+.lede { font-size: 18px; color: var(--muted); margin: 0; max-width: 62ch; }
+.sub { color: var(--muted); font-size: 14px; margin: 8px 0 0; max-width: 70ch; }
+.rec { background: var(--surface); border: 2px solid var(--accent); border-radius: 12px; padding: 20px 22px; display: grid; gap: 10px; }
+.rec .lbl { font: 700 12px/1 var(--font-display); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.rec h2 { margin: 0; font-size: 28px; }
+.rec p { margin: 0; max-width: 72ch; }
+.tblwrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th, td { padding: 12px 14px; text-align: right; border-bottom: 1px solid var(--line); font-size: 15px; }
+thead th { font: 600 13px/1.25 var(--font); color: var(--muted); vertical-align: bottom; }
+th:first-child { text-align: left; }
+tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
+tbody th { font-weight: 600; white-space: nowrap; }
+tr.best { background: var(--accent-soft); }
+.key { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-block; font: 600 13px/1 var(--font); padding: 6px 10px; border-radius: 999px; }
+.chip.ok { background: var(--ok-bg); color: var(--ok); }
+.chip.ask { background: var(--ask-bg); color: var(--ask); }
+.chip.no { background: var(--no-bg); color: var(--no); }
+.town h2 { margin-bottom: 0; }
+.offices { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 12px; }
+.office { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; display: grid; gap: 10px; }
+.office p { margin: 0; font-size: 15px; }
+.ohead { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: start; }
+.num { width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: var(--surface); font: 700 14px/28px var(--font-display); text-align: center; }
+.oname { display: grid; gap: 2px; min-width: 0; }
+.oname a { font: 700 19px/1.2 var(--font-display); text-decoration: none; }
+.oname a:hover { text-decoration: underline; }
+.addr { color: var(--muted); font-size: 14px; }
+.price { font: 700 17px/1.2 var(--font-display); white-space: nowrap; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.warn { color: var(--ask); font-weight: 600; font-size: 14px !important; }
+.notes { display: grid; gap: 10px; color: var(--ink); }
+.notes p { margin: 0; font-size: 15px; max-width: 76ch; }
+.notes h2 { margin-bottom: 0; }
+.src { margin: 0; padding-left: 22px; font-size: 14px; display: grid; gap: 4px; }
+@media (max-width: 600px) {
+  .wrap { padding: 28px 16px 48px; gap: 28px; }
+  .ohead { grid-template-columns: auto 1fr; }
+  .price { grid-column: 2; }
+  th, td { padding: 10px; font-size: 14px; }
+}
+.wrap > *, section { min-width: 0; }
+</style>
+</head>
+<body>
+<main class="wrap">
+<header>
+<div class="eyebrow">NJ Drain &amp; Plumbing &middot; Haledon, NJ &middot; Location analysis &middot; November 2026</div>
+<h1>Coworking location candidates for NJ Drain &amp; Plumbing</h1>
+<p class="lede">Where to open a small office in Jersey City, North Bergen or Passaic, based on Google searches for drain and plumbing help, nearby competitors and the offices available in each town.</p>
+</header>
+<section class="rec"><span class="lbl">Recommendation</span><h2>Start with Jersey City</h2>
+<p>Jersey City has the most demand by a wide margin: at least 1,530 Google searches a month for drain and sewer help and 4,328 for plumbing overall, about 255 for each drain or plumbing company BBB lists within 3 miles. It also has the best offices: CoLab by DVORA has hosted reception and a 1-month minimum from $765 a month, 0.3 miles from City Hall.</p>
+<p><b>Trade-offs:</b> Jersey City is about 17 miles from the Haledon shop. Passaic is closest (about 6 miles) but has the least demand and the most competition, with 47 companies within 3 miles. North Bergen sits in between and has no coworking center of its own.</p></section>
+<section>
+<h2>The three towns side by side</h2>
+<div class="tblwrap"><table>
+<thead><tr><th scope="col">Town</th><th scope="col">Drain and sewer searches a month</th><th scope="col">All plumbing searches a month</th><th scope="col">Drain and plumbing companies within 3 mi</th><th scope="col">Searches per company</th><th scope="col">Miles from the Haledon shop</th></tr></thead>
+<tbody>
+<tr class="best"><th scope="row">Jersey City <em>Best</em></th><td>1,530</td><td>4,328</td><td>17</td><td>255</td><td>17</td></tr>
+<tr><th scope="row">North Bergen</th><td>626</td><td>1,698</td><td>10</td><td>170</td><td>13</td></tr>
+<tr><th scope="row">Passaic</th><td>310</td><td>839</td><td>47</td><td>18</td><td>6</td></tr>
+</tbody></table></div>
+<p class="sub">Searches are the lowest each total could be. Searches per company uses all plumbing searches.</p>
+</section>
+<section><h2>Top offices in each town</h2>
+<div class="key"><span class="chip ok">Confirmed</span><span class="chip ask">Ask on the call</span><span class="chip no">Fails</span></div></section>
+<section class="town t-jc"><h2>Jersey City <em>Best</em></h2><p class="sub">Plenty of choice downtown, including two places with staffed reception. Distances are from City Hall, 280 Grove St.</p><ol class="offices"><li class="office"><div class="ohead"><span class="num">1</span><div class="oname"><a href="https://liquidspace.com/us/nj/jersey-city/colab-by-dvora/1-desk" target="_blank" rel="noopener">CoLab by DVORA</a><span class="addr">155 2nd St, Jersey City &middot; 0.3 mi</span></div><span class="price">From $765/mo</span></div><div class="chips"><span class="chip ok">Front desk</span><span class="chip ok">Month-to-month</span><span class="chip ask">Ground floor</span></div><p>Private 1-desk office with a 1-month minimum. LiquidSpace lists hosted reception and 24/7 access. Ask which floor the office is on and whether NJ Drain &amp; Plumbing can sign the door.</p></li>
+<li class="office"><div class="ohead"><span class="num">2</span><div class="oname"><a href="https://www.office-hub.com/properties/150-bay-street-jersey-city-nj-a0vQg00000dainPIAQ" target="_blank" rel="noopener">Regus Bay Street</a><span class="addr">150 Bay St, 3rd Floor, Jersey City &middot; 0.3 mi</span></div><span class="price">From $817/mo</span></div><div class="chips"><span class="chip ok">Front desk</span><span class="chip ask">Month-to-month</span><span class="chip no">Ground floor</span></div><p>Staffed reception on weekdays, 24/7 access for office members. The 1-person office price is Office Hub’s current rate; ask for the shortest term and the notice period.</p></li>
+<li class="office"><div class="ohead"><span class="num">3</span><div class="oname"><a href="https://coworkingcafe.com/coworking-property/us/nj/jersey-city/201-montgomery-street" target="_blank" rel="noopener">&amp;CO Coworking, Grove</a><span class="addr">201 Montgomery St, 2nd Floor, Jersey City &middot; 0.0 mi</span></div><span class="price">From $900/mo</span></div><div class="chips"><span class="chip ask">Front desk</span><span class="chip ok">Month-to-month</span><span class="chip no">Ground floor</span></div><p>Across from City Hall. Month-to-month memberships; mail services listed. Ask whether someone is at the front during business hours.</p></li></ol></section>
+<section class="town t-nb"><h2>North Bergen</h2><p class="sub">No coworking center turned up inside North Bergen; these are the closest, in Union City and the Meadowlands. Distances are from Town Hall, 4233 Kennedy Blvd.</p><ol class="offices"><li class="office"><div class="ohead"><span class="num">1</span><div class="oname"><a href="https://liquidspace.com/us/nj/union-city/19th-street-co-working/single-office-75f7" target="_blank" rel="noopener">19th Street Co-Working</a><span class="addr">160 19th St, Union City &middot; 1.2 mi</span></div><span class="price">From $510/mo</span></div><div class="chips"><span class="chip ask">Front desk</span><span class="chip ok">Month-to-month</span><span class="chip ask">Ground floor</span></div><p>Private 1-person office with its own door and a 1-month minimum, just south of North Bergen. No front desk is mentioned; ask who is on site.</p></li>
+<li class="office"><div class="ohead"><span class="num">2</span><div class="oname"><a href="https://www.office-hub.com/properties/500-paterson-plank-rd-union-city-nj-a0v3m00000N7wV4AAJ" target="_blank" rel="noopener">NJ Office Share</a><span class="addr">500 Paterson Plank Rd, Union City &middot; 1.8 mi</span></div><span class="price">From $625/mo</span></div><div class="chips"><span class="chip ok">Front desk</span><span class="chip ask">Month-to-month</span><span class="chip ask">Ground floor</span></div><p>Office Hub lists a receptionist and a $625 1-person office, priced on a 12-month term with shorter terms available. Its building page showed no open offices in April 2026, so confirm availability.</p><p class="warn">Availability not confirmed</p></li>
+<li class="office"><div class="ohead"><span class="num">3</span><div class="oname"><a href="https://www.commercialsearch.com/coworking-property/us/nj/east-rutherford/nj-east-rutherford-meadowlands/" target="_blank" rel="noopener">Regus Meadowlands</a><span class="addr">1 Meadowlands Plaza, Suite 200, East Rutherford &middot; 3.2 mi</span></div><span class="price">From $649/mo</span></div><div class="chips"><span class="chip ok">Front desk</span><span class="chip ask">Month-to-month</span><span class="chip no">Ground floor</span></div><p>Staffed Regus center in an office tower west of North Bergen; open to 5 pm on weekdays. Also on the Passaic list.</p></li></ol></section>
+<section class="town t-passaic"><h2>Passaic</h2><p class="sub">No coworking center turned up inside Passaic; these are the closest staffed or month-to-month options. Distances are from City Hall, 330 Passaic St.</p><ol class="offices"><li class="office"><div class="ohead"><span class="num">1</span><div class="oname"><a href="https://www.commercialsearch.com/coworking-property/us/nj/east-rutherford/nj-east-rutherford-meadowlands/" target="_blank" rel="noopener">Regus Meadowlands</a><span class="addr">1 Meadowlands Plaza, Suite 200, East Rutherford &middot; 4.5 mi</span></div><span class="price">From $649/mo</span></div><div class="chips"><span class="chip ok">Front desk</span><span class="chip ask">Month-to-month</span><span class="chip no">Ground floor</span></div><p>Nearest staffed center to Passaic; there is no coworking center in Passaic itself. Ask for the shortest term.</p></li>
+<li class="office"><div class="ohead"><span class="num">2</span><div class="oname"><a href="https://www.officeevolution.com/locations/hackensack/dedicated-offices" target="_blank" rel="noopener">Office Evolution Hackensack</a><span class="addr">2 University Plaza Dr, Suite 100, Hackensack &middot; 5.0 mi</span></div><span class="price">From about $1,000/mo</span></div><div class="chips"><span class="chip ok">Front desk</span><span class="chip ok">Month-to-month</span><span class="chip ask">Ground floor</span></div><p>Month-to-month private offices with a business center manager who greets guests, and free parking off Route 4. Office Hub lists offices from $997 a month.</p></li>
+<li class="office"><div class="ohead"><span class="num">3</span><div class="oname"><a href="https://www.commercialsearch.com/coworking-property/us/nj/montclair/605-valley-road" target="_blank" rel="noopener">Small Officer Montclair</a><span class="addr">605 Valley Rd, Upper Montclair &middot; 4.6 mi</span></div><span class="price">From $650/mo</span></div><div class="chips"><span class="chip no">Front desk</span><span class="chip ok">Month-to-month</span><span class="chip no">Ground floor</span></div><p>Offices rented by the hour, day or month on an upper floor reached by stairs (a reviewer notes no elevator). No front desk, so it fails Google’s staffing rule unless NJ Drain &amp; Plumbing staffs it.</p></li></ol></section>
+
+<section class="notes"><h2>How this was put together</h2>
+<p><b>Business.</b> NJ Drain &amp; Plumbing Service LLC, (201) 275-4667, 325 Haledon Ave, Haledon, NJ, from the onboarding form on monday.com. Drain cleaning, sewer cleaning, plumbing and HVAC, 24/7.</p>
+<p><b>Searches.</b> Google Keyword Planner, November 24, 2026, average month from November 2025 to October 2026, using seven seed terms (plumber, plumbing, drain cleaning, sewer cleaning, clogged drain, sewer line repair, hydro jetting) for each town as Google defines it. Only service searches were kept (for example &ldquo;drain cleaning near me&rdquo;, &ldquo;sewer line repair&rdquo;, &ldquo;emergency plumber&rdquo;); do-it-yourself, product, brand and other-town searches were dropped, and searches Google treats as the same were counted once. Google gives a range for each keyword, so the figures are the lowest each total could be. Google&rsquo;s own reach for its Jersey City and North Bergen areas (1.3 million and 1.42 million people) is far larger than for Passaic (139,000), so those two cover more of the surrounding area.</p>
+<p><b>Competitors.</b> BBB listings in the Plumber, Sewer Cleaning and Drain Cleaning categories, searched around each town and nearby ZIP codes, counting New Jersey companies whose name or main category is plumbing, drain or sewer work and that give a street address. Addresses were placed with the U.S. Census geocoder; each company counts once per town. BBB lists only businesses with a profile, so these are floors.</p>
+<p><b>Offices.</b> Coworking and small private offices within about 5 miles of each center, from LiquidSpace, Office Hub, CommercialSearch, CoworkingCafe and operator sites, checked November 24, 2026. Green is confirmed by the listing, amber is a question for the call, red fails. Google requires a business address to be staffed during its posted hours, so a front desk matters.</p>
+</section>
+<section class="notes"><h2>Sources</h2><ol class="src"><li><a href="https://ads.google.com/home/tools/keyword-planner/" target="_blank" rel="noopener">Google Ads Keyword Planner</a></li><li><a href="https://www.bbb.org/search?find_country=USA&amp;find_loc=Jersey%20City%2C%20NJ&amp;find_text=Plumber&amp;find_type=Category&amp;sort=Distance" target="_blank" rel="noopener">BBB search: Plumber near Jersey City, NJ</a></li><li><a href="https://www.bbb.org/search?find_country=USA&amp;find_loc=Passaic%2C%20NJ&amp;find_text=Sewer%20Cleaning&amp;find_type=Category&amp;sort=Distance" target="_blank" rel="noopener">BBB search: Sewer Cleaning near Passaic, NJ</a></li><li><a href="https://www.bbb.org/search?find_country=USA&amp;find_loc=North%20Bergen%2C%20NJ&amp;find_text=Plumber&amp;find_type=Category&amp;sort=Distance" target="_blank" rel="noopener">BBB search: Plumber near North Bergen, NJ</a></li><li><a href="https://geocoding.geo.census.gov/geocoder/" target="_blank" rel="noopener">U.S. Census Bureau Geocoder</a></li><li><a href="https://support.google.com/business/answer/3038177" target="_blank" rel="noopener">Google Business Profile guidelines</a></li></ol></section>
+</main>
+</body>
+</html>
